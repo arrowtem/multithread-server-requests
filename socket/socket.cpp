@@ -93,8 +93,8 @@ int go(int i) {
         // The sockaddr_in structure specifies the address family,
         // IP address, and port of the server to be connected to.
         clientService.sin_family = AF_INET;
-        clientService.sin_addr.s_addr = inet_addr("88.212.241.115");
-        clientService.sin_port = htons(2013);
+        clientService.sin_addr.s_addr = inet_addr("");
+        clientService.sin_port = htons();
 
      
         iResult = connect(ConnectSocket, (SOCKADDR*)&clientService, sizeof(clientService));
